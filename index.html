@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="WanderLux Travel Agency provides personalised holiday packages, guided tours, flights, hotels and luxury travel planning.">
+
+    <meta name="keywords"
+          content="WanderLux, travel agency, holiday packages, tours, flights, hotels, honeymoon">
+
+    <title>WanderLux Travel Agency | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wander<span>Lux</span></a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="calculator.html">Trip Calculator</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HERO / ROTATING BANNER -->
+    <section class="hero">
+
+        <div class="slide active"
+             style="background-image:
+             linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+             url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80');">
+
+            <div class="hero-content">
+                <p class="eyebrow">Explore Bali</p>
+                <h1>Your Journey Begins With WanderLux</h1>
+                <p>
+                    Personalised holidays designed around your interests,
+                    budget and travel dreams.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="destinations.html" class="btn">Explore Packages</a>
+                    <a href="calculator.html" class="btn btn-outline">
+                        Estimate Your Trip
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide"
+             style="background-image:
+             linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+             url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80');">
+
+            <div class="hero-content">
+                <p class="eyebrow">Discover Paris</p>
+                <h1>Create Memories Across the World</h1>
+                <p>
+                    Experience iconic destinations through carefully
+                    planned travel experiences.
+                </p>
+
+                <a href="appointment.html" class="btn">
+                    Speak With a Consultant
+                </a>
+            </div>
+        </div>
+
+
+        <div class="slide"
+             style="background-image:
+             linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+             url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1600&q=80');">
+
+            <div class="hero-content">
+                <p class="eyebrow">Luxury Maldives</p>
+                <h1>Travel Your Way</h1>
+                <p>
+                    From affordable escapes to premium luxury holidays,
+                    WanderLux makes travel planning simple.
+                </p>
+
+                <a href="calculator.html" class="btn">
+                    Calculate Trip Cost
+                </a>
+            </div>
+        </div>
+
+        <button class="slider-btn prev" id="previousSlide"
+                aria-label="Previous destination">❮</button>
+
+        <button class="slider-btn next" id="nextSlide"
+                aria-label="Next destination">❯</button>
+
+        <div class="slider-dots">
+            <button class="dot active" data-slide="0"
+                    aria-label="Show slide 1"></button>
+            <button class="dot" data-slide="1"
+                    aria-label="Show slide 2"></button>
+            <button class="dot" data-slide="2"
+                    aria-label="Show slide 3"></button>
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="section reveal">
+
+        <div class="section-heading">
+            <span>Welcome to WanderLux</span>
+            <h2>Travel Experiences Designed Around You</h2>
+
+            <p>
+                WanderLux Travel Agency provides personalised travel
+                planning for domestic and international travellers.
+                Whether you are planning a short holiday, honeymoon,
+                guided adventure or luxury escape, our consultants help
+                create an itinerary that matches your expectations.
+            </p>
+        </div>
+
+
+        <div class="features-grid">
+
+            <article class="feature-card">
+                <div class="icon">✈️</div>
+                <h3>Personalised Travel</h3>
+                <p>
+                    Travel itineraries designed around your destination,
+                    schedule, interests and preferred budget.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="icon">🌍</div>
+                <h3>Global Destinations</h3>
+                <p>
+                    Explore carefully selected domestic and international
+                    destinations with trusted travel support.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="icon">🤝</div>
+                <h3>Expert Assistance</h3>
+                <p>
+                    Our travel consultants provide guidance before,
+                    during and after your journey.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- POPULAR PACKAGES -->
+    <section class="section light-section reveal">
+
+        <div class="section-heading">
+            <span>Featured Experiences</span>
+            <h2>Popular Travel Packages</h2>
+            <p>
+                Explore some of our most popular experiences and start
+                planning your next journey.
+            </p>
+        </div>
+
+
+        <div class="package-grid">
+
+            <article class="package-card">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                     alt="Temple surrounded by tropical scenery in Bali">
+
+                <div class="package-content">
+                    <span class="tag">Popular</span>
+                    <h3>Bali Tropical Escape</h3>
+                    <p>5 nights • Accommodation • Guided activities</p>
+                    <strong>From $1,250</strong>
+                </div>
+            </article>
+
+
+            <article class="package-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                     alt="Eiffel Tower in Paris">
+
+                <div class="package-content">
+                    <span class="tag">Culture</span>
+                    <h3>Paris City Experience</h3>
+                    <p>6 nights • City tour • Hotel accommodation</p>
+                    <strong>From $1,890</strong>
+                </div>
+            </article>
+
+
+            <article class="package-card">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80"
+                     alt="Luxury resort overlooking tropical water">
+
+                <div class="package-content">
+                    <span class="tag">Luxury</span>
+                    <h3>Maldives Honeymoon</h3>
+                    <p>5 nights • Luxury resort • Romantic experiences</p>
+                    <strong>From $2,750</strong>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section reveal">
+        <div>
+            <p>Ready for your next adventure?</p>
+            <h2>Let WanderLux Design Your Perfect Holiday.</h2>
+        </div>
+
+        <a href="appointment.html" class="btn">
+            Request an Appointment
+        </a>
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3>WanderLux</h3>
+            <p>
+                Personalised travel experiences for unforgettable
+                journeys around the world.
+            </p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="destinations.html">Destinations</a>
+            <a href="calculator.html">Trip Calculator</a>
+            <a href="appointment.html">Appointment</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>123 Adventure Street, Melbourne VIC</p>
+            <p>+61 3 9000 1234</p>
+            <p>hello@wanderlux.com.au</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © <span id="currentYear"></span> WanderLux Travel Agency.
+        All rights reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

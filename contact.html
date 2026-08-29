@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact WanderLux Travel Agency for travel information, questions and personalised holiday assistance.">
+
+    <title>Contact | WanderLux</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<a href="index.html" class="logo">Wander<span>Lux</span></a>
+
+<button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu">☰</button>
+
+<ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="calculator.html">Trip Calculator</a></li>
+    <li><a href="appointment.html">Appointment</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+
+<section class="page-banner">
+<div>
+    <p>We'd Love to Hear From You</p>
+    <h1>Contact WanderLux</h1>
+    <span>
+        Send us your question and our travel team will
+        be happy to assist.
+    </span>
+</div>
+</section>
+
+
+<main>
+
+<section class="section">
+
+<div class="contact-layout">
+
+<div class="contact-info reveal">
+
+<span class="small-heading">Contact Information</span>
+<h2>Let's Talk Travel</h2>
+
+<p>
+Whether you need destination advice or assistance with
+a customised itinerary, our team is ready to help.
+</p>
+
+
+<div class="info-item">
+    <strong>📍 Address</strong>
+    <p>123 Adventure Street, Melbourne VIC 3000</p>
+</div>
+
+
+<div class="info-item">
+    <strong>☎ Phone</strong>
+    <p>+61 3 9000 1234</p>
+</div>
+
+
+<div class="info-item">
+    <strong>✉ Email</strong>
+    <p>hello@wanderlux.com.au</p>
+</div>
+
+
+<div class="info-item">
+    <strong>🕐 Business Hours</strong>
+    <p>Monday–Friday: 9:00 AM–6:00 PM</p>
+</div>
+
+</div>
+
+
+<div class="form-card reveal">
+
+<h2>Send a Message</h2>
+
+<form id="contactForm">
+
+<div class="form-group">
+    <label for="contactName">Full Name *</label>
+
+    <input type="text"
+           id="contactName"
+           required
+           minlength="2"
+           placeholder="Enter your full name">
+</div>
+
+
+<div class="form-group">
+    <label for="contactEmail">Email *</label>
+
+    <input type="email"
+           id="contactEmail"
+           required
+           placeholder="name@example.com">
+</div>
+
+
+<div class="form-group">
+    <label for="contactSubject">Subject *</label>
+
+    <input type="text"
+           id="contactSubject"
+           required
+           placeholder="How can we help?">
+</div>
+
+
+<div class="form-group">
+    <label for="contactMessage">Message *</label>
+
+    <textarea id="contactMessage"
+              rows="6"
+              required
+              minlength="10"
+              placeholder="Enter your message"></textarea>
+</div>
+
+
+<button type="submit" class="btn full-btn">
+    Send Email
+</button>
+
+<p class="form-status"
+   id="contactStatus"
+   aria-live="polite"></p>
+
+</form>
+
+</div>
+
+</div>
+
+
+<div class="map-container reveal">
+
+<iframe
+    src="https://www.google.com/maps?q=Melbourne%20VIC%20Australia&output=embed"
+    title="Map showing Melbourne, Victoria"
+    loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="copyright">
+© <span id="currentYear"></span> WanderLux Travel Agency.
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

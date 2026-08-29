@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Request a consultation appointment with a WanderLux travel consultant.">
+
+    <title>Appointment Request | WanderLux</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+    <a href="index.html" class="logo">Wander<span>Lux</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="calculator.html">Trip Calculator</a></li>
+        <li><a class="active" href="appointment.html">Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+</header>
+
+
+<section class="page-banner">
+    <div>
+        <p>Talk to an Expert</p>
+        <h1>Request an Appointment</h1>
+        <span>
+            Tell us about your travel plans and one of our
+            consultants will contact you.
+        </span>
+    </div>
+</section>
+
+
+<main>
+
+<section class="section">
+
+<div class="contact-layout">
+
+<div class="contact-info reveal">
+
+    <span class="small-heading">Personal Travel Planning</span>
+    <h2>Start Planning Your Journey</h2>
+
+    <p>
+        Our consultants can help you compare destinations,
+        accommodation, travel styles and activities before
+        creating a personalised itinerary.
+    </p>
+
+    <div class="info-item">
+        <strong>Consultation Hours</strong>
+        <p>Monday–Friday: 9:00 AM–6:00 PM</p>
+    </div>
+
+    <div class="info-item">
+        <strong>Telephone</strong>
+        <p>+61 3 9000 1234</p>
+    </div>
+
+</div>
+
+
+<div class="form-card reveal">
+
+<form id="appointmentForm">
+
+    <div class="form-group">
+        <label for="appointmentName">Full Name *</label>
+
+        <input type="text"
+               id="appointmentName"
+               name="name"
+               required
+               minlength="2"
+               placeholder="Enter your full name">
+    </div>
+
+
+    <div class="form-group">
+        <label for="appointmentEmail">Email Address *</label>
+
+        <input type="email"
+               id="appointmentEmail"
+               name="email"
+               required
+               placeholder="name@example.com">
+    </div>
+
+
+    <div class="form-group">
+        <label for="appointmentPhone">Phone Number *</label>
+
+        <input type="tel"
+               id="appointmentPhone"
+               name="phone"
+               required
+               placeholder="+61 400 000 000">
+    </div>
+
+
+    <div class="form-group">
+        <label for="appointmentDate">Preferred Date *</label>
+
+        <input type="date"
+               id="appointmentDate"
+               name="date"
+               required>
+    </div>
+
+
+    <div class="form-group">
+        <label for="appointmentMessage">
+            Tell Us About Your Travel Plans
+        </label>
+
+        <textarea id="appointmentMessage"
+                  name="message"
+                  rows="6"
+                  placeholder="Destination, dates, number of travellers and other preferences..."></textarea>
+    </div>
+
+
+    <button type="submit" class="btn full-btn">
+        Submit Appointment Request
+    </button>
+
+    <p class="form-status" id="appointmentStatus"
+       aria-live="polite"></p>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+    <div class="copyright">
+        © <span id="currentYear"></span> WanderLux Travel Agency.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

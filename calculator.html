@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Estimate the cost of your WanderLux holiday using our interactive trip cost calculator.">
+
+    <title>Trip Cost Calculator | WanderLux</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wander<span>Lux</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a class="active" href="calculator.html">Trip Calculator</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="page-banner">
+    <div>
+        <p>Plan Your Budget</p>
+        <h1>Trip Cost Calculator</h1>
+        <span>
+            Get an instant estimate for your next WanderLux holiday.
+        </span>
+    </div>
+</section>
+
+
+<main>
+
+<section class="section">
+
+<div class="calculator-layout">
+
+<div class="form-card reveal">
+
+    <span class="small-heading">Travel Estimate</span>
+    <h2>Build Your Trip</h2>
+
+    <p>
+        Select your destination, travellers, duration and
+        preferred travel style.
+    </p>
+
+
+    <form id="tripCalculator">
+
+        <div class="form-group">
+            <label for="destination">Destination</label>
+
+            <select id="destination" required>
+                <option value="">Select destination</option>
+                <option value="Bali">Bali</option>
+                <option value="Paris">Paris</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Japan">Japan</option>
+                <option value="Sydney">Sydney</option>
+            </select>
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="travellers">Number of Travellers</label>
+
+                <input type="number"
+                       id="travellers"
+                       min="1"
+                       max="20"
+                       value="2"
+                       required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="days">Number of Days</label>
+
+                <input type="number"
+                       id="days"
+                       min="1"
+                       max="60"
+                       value="5"
+                       required>
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="travelStyle">Travel Style</label>
+
+            <select id="travelStyle" required>
+                <option value="">Select travel style</option>
+                <option value="Budget">Budget</option>
+                <option value="Standard">Standard</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+
+        </div>
+
+
+        <button type="submit" class="btn full-btn">
+            Calculate Estimated Cost
+        </button>
+
+    </form>
+
+</div>
+
+
+<div class="result-card reveal">
+
+    <p class="small-heading">Estimated Package</p>
+
+    <div class="result-icon">✈</div>
+
+    <h2 id="estimatedPrice">$0</h2>
+
+    <p id="estimateMessage">
+        Complete the form to receive your estimated travel cost.
+    </p>
+
+
+    <div class="estimate-breakdown" id="estimateBreakdown">
+        <div>
+            <span>Destination</span>
+            <strong id="resultDestination">—</strong>
+        </div>
+
+        <div>
+            <span>Travellers</span>
+            <strong id="resultTravellers">—</strong>
+        </div>
+
+        <div>
+            <span>Duration</span>
+            <strong id="resultDays">—</strong>
+        </div>
+
+        <div>
+            <span>Travel Style</span>
+            <strong id="resultStyle">—</strong>
+        </div>
+    </div>
+
+
+    <small>
+        This calculator provides an indicative estimate only.
+        Final prices depend on availability, season and travel dates.
+    </small>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="copyright">
+        © <span id="currentYear"></span> WanderLux Travel Agency.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
